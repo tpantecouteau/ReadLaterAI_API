@@ -1,0 +1,59 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.log
+*.sqlite3
+*.db
+
+# --- Virtual environments ---
+venv/
+env/
+.venv/
+.env/
+ENV/
+*.env
+
+# --- IDE / editors ---
+.vscode/
+.idea/
+*.swp
+
+# --- Byte-compiled / cache ---
+__pycache__/
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# --- OS specific ---
+.DS_Store
+Thumbs.db
+
+# --- pytest / coverage ---
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- Local data / test databases ---
+readlater.db
+test.db
+*.sqlite
+
+# --- Jupyter / notebooks ---
+.ipynb_checkpoints/
+
+# --- Others ---
+*.bak
+*.tmp
+*.log
+
+
+.env
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+readlater.db
