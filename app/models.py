@@ -19,7 +19,7 @@ class Post(SQLModel, table=True):
     tags: Optional[str] = Field(default=None)
     status: StatusEnum = Field(default="pending", nullable=False)
     created_at: datetime = Field(default_factory=datetime.utcnow, nullable=False)
-
+    source: Optional[str] = Field(default=None, index=True)    
     owner_id: Optional[int] = Field(default=None, foreign_key="user.id")
     owner: Optional["User"] = Relationship(back_populates="posts")
 

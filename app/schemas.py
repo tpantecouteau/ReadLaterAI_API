@@ -22,7 +22,7 @@ class ReadPost(BaseModel):
     title: Optional[str] = None
     content: Optional[str] = None
     summary: Optional[str] = None
-    # SQLModel stocke "tags" comme str → on garde List[str] logique mais il sera converti côté code
+    source: Optional[str] = None   
     tags: Optional[List[str]] = None
     status: Status = "pending"
     created_at: datetime
